@@ -1,6 +1,6 @@
 # SPPU CGPA calculator
 
-A new Flutter application.
+A new Flutter application which will be useful for Students especially from SPPU to calculate their SGPA and CGPA
 
 ## Getting Started
 
