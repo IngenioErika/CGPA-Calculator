@@ -1,20 +1,12 @@
 import 'package:flutter/material.dart';
-import 'sem2.dart';
+import 'sem4.dart';
 
-void main()
-{
-  runApp(new MaterialApp(
-    home: CGPA_Calculator(),
-    )
-  );
-}
-
-class CGPA_Calculator extends StatefulWidget {
+class sem3 extends StatefulWidget {
   @override
-  _CGPA_CalculatorState createState() => _CGPA_CalculatorState();
+  _sem3State createState() => _sem3State();
 }
 
-class _CGPA_CalculatorState extends State<CGPA_Calculator> {
+class _sem3State extends State<sem3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -209,7 +201,7 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          navigateTosem2(context);
+          navigateTosem4(context);
         },
         child: Icon(
           Icons.navigate_next,
@@ -220,8 +212,7 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
     );
   }
 }
-
-Future navigateTosem2(context) async {
+Future navigateTosem4(context) async {
   Navigator.push(
-      context, MaterialPageRoute(builder: (context) => sem2()));
+      context, MaterialPageRoute(builder: (context) => sem4()));
 }
