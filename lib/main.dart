@@ -1,13 +1,45 @@
 import 'package:flutter/material.dart';
 import 'sem2.dart';
 
-void main()
-{
+import 'package:splashscreen/splashscreen.dart';
+
+void main() {
   runApp(new MaterialApp(
-    home: CGPA_Calculator(),
-    )
-  );
+    debugShowCheckedModeBanner: false,
+    home: new MyApp(),
+  ));
 }
+
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  
+  Widget build(BuildContext context) {
+    return SplashScreen(
+      seconds: 3,
+      backgroundColor: Colors.white,
+      image: Image.asset('./assets/sppu_calc.png'),
+      title: new Text('Made with ❤️ by Ingenio Erika',
+      style: new TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: 15.0,
+      ),),
+      loaderColor: Colors.white,
+      photoSize: 150.0,
+      navigateAfterSeconds: CGPA_Calculator(),
+      );
+      
+     // navigateAfterSeconds: MainScreen(),
+    
+
+ }
+ 
+}
+
 
 class CGPA_Calculator extends StatefulWidget {
   @override
