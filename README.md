@@ -1,4 +1,4 @@
-# cgpacalculator
+# SPPU CGPA calculator
 
 A new Flutter application.
 
