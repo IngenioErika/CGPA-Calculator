@@ -1,12 +1,20 @@
+import 'package:cgpacalculator/report.dart';
 import 'package:flutter/material.dart';
 import 'sem5.dart';
 
 class sem4 extends StatefulWidget {
+     String value;
+       
+  sem4({this.value});
   @override
-  _sem4State createState() => _sem4State();
+  _sem4State createState() => _sem4State(value:value);
 }
 
 class _sem4State extends State<sem4> {
+      String value;
+  String s4;
+  double calsgpa=0;
+   _sem4State({this.value});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,6 +38,12 @@ class _sem4State extends State<sem4> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                      keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr1= double.parse(text);//first crd
+                    calsgpa=calsgpa+cr1;
+                    print(calsgpa);
+                      }, 
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -42,6 +56,12 @@ class _sem4State extends State<sem4> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                       keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr2= double.parse(text);//first crd
+                    calsgpa=calsgpa+cr2;
+                    print(calsgpa);
+                      },
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -54,6 +74,12 @@ class _sem4State extends State<sem4> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                       keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr3= double.parse(text);//first crd
+                    calsgpa=calsgpa+cr3;
+                    print(calsgpa);
+                      },
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -66,6 +92,12 @@ class _sem4State extends State<sem4> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                       keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr4= double.parse(text);//first crd
+                    calsgpa=calsgpa+cr4;
+                    print(calsgpa);
+                      },
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -78,6 +110,12 @@ class _sem4State extends State<sem4> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                       keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr5= double.parse(text);//first crd
+                    calsgpa=calsgpa+cr5;
+                    print(calsgpa);
+                      },
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -96,6 +134,12 @@ class _sem4State extends State<sem4> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                       keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr6= double.parse(text);//first crd
+                    calsgpa=calsgpa+cr6;
+                    print(calsgpa);
+                      },
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -108,6 +152,12 @@ class _sem4State extends State<sem4> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                       keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr7= double.parse(text);//first crd
+                    calsgpa=calsgpa+cr7;
+                    print(calsgpa);
+                      },
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -120,6 +170,12 @@ class _sem4State extends State<sem4> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                       keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr8= double.parse(text);//first crd
+                    calsgpa=calsgpa+cr8;
+                    print(calsgpa);
+                      },
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -132,6 +188,12 @@ class _sem4State extends State<sem4> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                       keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr9= double.parse(text);//first crd
+                    calsgpa=calsgpa+cr9;
+                    print(calsgpa);
+                      },
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -144,6 +206,12 @@ class _sem4State extends State<sem4> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                       keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr10= double.parse(text);//first crd
+                    calsgpa=calsgpa+cr10;
+                    print(calsgpa);
+                      },
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -160,6 +228,13 @@ class _sem4State extends State<sem4> {
             padding: EdgeInsets.symmetric(vertical: 10),
             width: 50,
             child: TextField(
+              keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr11= double.parse(text);//second crd
+                    calsgpa=calsgpa+cr11;
+                    print(calsgpa);
+                   value=calsgpa.toString();
+                      },
               decoration: new InputDecoration(
                   fillColor: Colors.white,
                   border: new OutlineInputBorder(
@@ -173,7 +248,9 @@ class _sem4State extends State<sem4> {
             width: 100,
             child: RaisedButton(
               child: Text("Calculate"),
-              onPressed: (){},
+              onPressed: (){Navigator.of(context).push(MaterialPageRoute(
+            builder: (context)=>sem5(value:value),
+        ));},
               color: Colors.blue[300],
             ),
           ),
@@ -189,6 +266,13 @@ class _sem4State extends State<sem4> {
             width: 50,
             height: 40,
             child: TextField(
+               keyboardType:TextInputType.text,
+              onChanged:(text){
+                var x=double.parse(value);
+                var y=double.parse(text);
+                var z=x+y;print(z);
+                s4 = z.toString();
+                }, 
               decoration: new InputDecoration(
                   fillColor: Colors.white,
                   border: new OutlineInputBorder(
@@ -201,7 +285,10 @@ class _sem4State extends State<sem4> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          navigateTosem5(context);
+           Navigator.of(context).push(MaterialPageRoute(
+            builder: (context)=>sem5(value:s4),
+        ));
+         // navigateTosem5(context);
         },
         child: Icon(
           Icons.navigate_next,
