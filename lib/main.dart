@@ -1,4 +1,7 @@
+
+import 'package:cgpacalculator/report.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'sem2.dart';
 
 import 'package:splashscreen/splashscreen.dart';
@@ -42,11 +45,14 @@ class _MyAppState extends State<MyApp> {
 
 
 class CGPA_Calculator extends StatefulWidget {
+  
   @override
   _CGPA_CalculatorState createState() => _CGPA_CalculatorState();
 }
 
 class _CGPA_CalculatorState extends State<CGPA_Calculator> {
+  String value;
+  double calsgpa=0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,6 +76,12 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                   keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr1= double.parse(text);//first crd
+                    calsgpa=calsgpa+cr1;
+                    print(calsgpa);
+                      }, 
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -82,6 +94,12 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                   keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr2= double.parse(text);//second crd
+                    calsgpa=calsgpa+cr2;
+                    print(calsgpa);
+                      },                       
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -94,6 +112,12 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                      keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr3= double.parse(text);//third crd
+                    calsgpa=calsgpa+cr3;
+                    print(calsgpa);
+                      }, 
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -106,6 +130,12 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                      keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr4= double.parse(text);//second crd
+                    calsgpa=calsgpa+cr4;
+                    print(calsgpa);
+                      }, 
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -118,6 +148,12 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                      keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr5= double.parse(text);//second crd
+                    calsgpa=calsgpa+cr5;
+                    print(calsgpa);
+                      }, 
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -136,6 +172,12 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                      keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr6= double.parse(text);//second crd
+                    calsgpa=calsgpa+cr6;
+                    print(calsgpa);
+                      }, 
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -148,6 +190,12 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                      keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr7= double.parse(text);//second crd
+                    calsgpa+=cr7;
+                    print(calsgpa);
+                      }, 
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -160,6 +208,12 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                      keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr8= double.parse(text);//second crd
+                    calsgpa=calsgpa+cr8;
+                    print(calsgpa);
+                      }, 
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -172,6 +226,12 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                      keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr9= double.parse(text);//second crd
+                    calsgpa=calsgpa+cr9;
+                    print(calsgpa);
+                      }, 
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -184,6 +244,12 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
                     padding: EdgeInsets.symmetric(vertical: 10),
                     width: 50,
                     child: TextField(
+                      keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr10= double.parse(text);//second crd
+                    calsgpa=calsgpa+cr10;
+                    print(calsgpa);
+                      }, 
                       decoration: new InputDecoration(
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
@@ -200,6 +266,13 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
             padding: EdgeInsets.symmetric(vertical: 10),
             width: 50,
             child: TextField(
+              keyboardType:TextInputType.text,
+                    onChanged:(text){ 
+                    var cr11= double.parse(text);//second crd
+                    calsgpa=calsgpa+cr11;
+                    print(calsgpa);
+                   value=calsgpa.toString();
+                      }, 
               decoration: new InputDecoration(
                   fillColor: Colors.white,
                   border: new OutlineInputBorder(
@@ -213,7 +286,11 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
             width: 100,
             child: RaisedButton(
               child: Text("Calculate"),
-              onPressed: (){},
+              onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(
+            builder: (context)=>sem2(value:value),
+        ));
+        },
               color: Colors.blue[300],
             ),
           ),
@@ -229,6 +306,10 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
             width: 50,
             height: 40,
             child: TextField(
+              keyboardType:TextInputType.text,
+              onChanged:(text){ 
+                value = text;
+                }, 
               decoration: new InputDecoration(
                   fillColor: Colors.white,
                   border: new OutlineInputBorder(
@@ -241,7 +322,10 @@ class _CGPA_CalculatorState extends State<CGPA_Calculator> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          navigateTosem2(context);
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context)=>sem2(value:value),
+        ));
+          //navigateTosem2(context);
         },
         child: Icon(
           Icons.navigate_next,
